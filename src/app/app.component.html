@@ -3,12 +3,12 @@
 Angular automatically adds a directive called ngForm on the form tag
 We can access the directive using template reference variable
 -->
-<form #form="ngForm">
+<form #form="ngForm" novalidate>
   <!--
     We should make Angular aware that we are intersted in this field by adding
     ngModel directive and name attribute
   -->
-  <input type="text" placeholder="Name" name="name" ngModel>
+  <input required type="text" placeholder="Name" name="name" ngModel>
   <button type="submit">Submit</button>
 </form>
 
